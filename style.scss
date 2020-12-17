@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+}
+
+header {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+    grid-gap: 1.5em;
+    padding: 0 40px;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .headerLogo {
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        font-family: 'Libre Barcode 39 Extended Text', cursive;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+
+        span {
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    #navbar {
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+        font-family: 'Reem Kufi', sans-serif;
+
+        .searchBox {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 14px;
+            color: white;
+            text-transform: capitalize;
+            height: 15px;
+        }
+
+        .LanguageSelect {
+            label {
+                font-size: 14px;
+                padding-right: 5px;
+                color: white;
+            }
+
+            select {
+                font-family: 'Reem Kufi', sans-serif;
+            }
+        }
+
+        .menuBtn1,
+        .menuBtn2 {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .menuBtn1:hover,
+        .menuBtn2:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+}
+
+.subnavbar {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: black;
+    padding: 0 40px;
+    grid-gap: 1.5em;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+
+    .navigationLinks {
+        display: grid;
+        padding: 0;
+        margin-bottom: 8px;
+        margin-top: 12px;
+        list-style-type: none;
+        align-content: center;
+        text-align: center;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+        font-family: "Open Sans", sans-serif;
+
+
+
+        li {
+            &:hover {
+                transform: translateY(-5px);
+                transition: 0.3s;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: 'Reem Kufi', sans-serif;
+                text-transform: uppercase;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+
+                &:hover {
+                    transition: 0.3s;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.currentCampaignHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+    padding: 0 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-gap: 1.5em;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .currentImage {
+        display: grid;
+        justify-content: start;
+        align-content: center;
+
+        .cyberpunk {
+            max-width: 100%;
+            border: 4px solid black;
+        }
+    }
+
+    .buyNow {
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+
+        .purchaseGame {
+            background-color: red;
+            cursor: pointer;
+            color: white;
+            width: 10rem;
+            height: 4rem;
+            border: 4px solid black;
+            font-family: 'Pacifico', cursive;
+            font-size: 25px;
+
+            &:hover {
+                transition: 0.3s;
+                font-size: 30px;
+                width: 12rem;
+                height: 5rem;
+            }
+        }
+    }
+}
+
+.moreAboutCyberpunk {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: black;
+    border-bottom: 4px solid black;
+    padding: 0 40px;
+    grid-gap: 1.5em;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .header {
+        h1 {
+            color: #f3ed01;
+            font-family: 'Libre Barcode 39 Extended Text', cursive;
+            text-transform: uppercase;
+            text-align: left;
+        }
+    }
+
+    .paragraph {
+        p {
+            color: white;
+            font-family: 'Reem Kufi', sans-serif;
+            text-transform: uppercase;
+            text-align: left;
+        }
+    }
+}
+
+.secondHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #000000, #ff0000);
+    border-bottom: 4px solid black;
+    grid-gap: 1.5em;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .firstImage,
+    .secondImage,
+    .thirdImage {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+
+        img {
+            height: 25em;
+            width: 100%;
+            object-fit: cover;
+            border: 4px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            font-family: 'Pacifico';
+            background-image: linear-gradient(to bottom right, #ff0000, #000000);
+            border: 4px solid black;
+            cursor: pointer;
+
+            &:hover {
+                font-size: 30px;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.thirdHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+    grid-gap: 1.5em;
+    padding: 20px 40px;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .firstThirdImage,
+    .secondThirdImage {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+
+        img {
+            height: 25em;
+            width: 100%;
+            object-fit: cover;
+            border: 4px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            font-family: 'Pacifico';
+            background-color: red;
+            border: 4px solid black;
+            cursor: pointer;
+
+            &:hover {
+                font-size: 30px;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.fourthHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-color: black;
+    grid-gap: 1.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .shippingInformation,
+    .moreShippingInformation,
+    .safePay,
+    .news {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: white;
+            font-family: 'Reem Kufi', sans-serif;
+
+            &:hover {
+                color: red;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.fifthHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+    grid-gap: 1.5em;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .languageSelectionAndRegion {
+        list-style-type: none;
+        align-content: center;
+        text-align: right;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+        padding: 0;
+        text-decoration: none;
+        font-family: 'Reem Kufi', sans-serif;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+        label {
+            padding-right: 5px;
+        }
+
+        form {
+            select {
+                height: 30px;
+                font-family: 'Reem Kufi', sans-serif;
+            }
+        }
+
+        .countrySelect {
+            padding-top: 10px;
+        }
+    }
+
+    .shoppingNavigationLinks,
+    .webPages,
+    .customerSupportNavigationLinks {
+        padding: 0;
+        margin-top: 0;
+        list-style-type: none;
+        align-content: center;
+        text-align: left;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+
+        :hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        li {
+            :hover {
+                transition: 0.3s;
+                color: black;
+            }
+
+
+            a {
+                text-decoration: none;
+                font-family: 'Reem Kufi', sans-serif;
+                text-transform: uppercase;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.footer {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-color: black;
+    grid-gap: 1.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 1px 2px 15px 2px #d1cdd1;
+
+    p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: white;
+        font-family: 'Reem Kufi', sans-serif;
+
+        &:hover {
+            color: red;
+            transition: 0.3s;
+        }
+    }
+}

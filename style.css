@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap");
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#0c0d0e));
+  background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#0c0d0e));
+  background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+header .headerLogo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+header .headerLogo span {
+  color: black;
+}
+
+header #navbar {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+header #navbar .searchBox {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-transform: capitalize;
+  height: 15px;
+}
+
+header #navbar .LanguageSelect label {
+  font-size: 14px;
+  padding-right: 5px;
+  color: white;
+}
+
+header #navbar .LanguageSelect select {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+header #navbar .menuBtn1,
+header #navbar .menuBtn2 {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header #navbar .menuBtn1:hover,
+header #navbar .menuBtn2:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.subnavbar {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: black;
+  padding: 0 40px;
+  grid-gap: 1.5em;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.subnavbar .navigationLinks {
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subnavbar .navigationLinks li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.subnavbar .navigationLinks li a {
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subnavbar .navigationLinks li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: red;
+}
+
+.currentCampaignHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#0c0d0e));
+  background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+  padding: 0 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  grid-gap: 1.5em;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.currentCampaignHero .currentImage {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.currentCampaignHero .currentImage .cyberpunk {
+  max-width: 100%;
+  border: 4px solid black;
+}
+
+.currentCampaignHero .buyNow {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.currentCampaignHero .buyNow .purchaseGame {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  border: 4px solid black;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+
+.currentCampaignHero .buyNow .purchaseGame:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 30px;
+  width: 12rem;
+  height: 5rem;
+}
+
+.moreAboutCyberpunk {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: black;
+  border-bottom: 4px solid black;
+  padding: 0 40px;
+  grid-gap: 1.5em;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.moreAboutCyberpunk .header h1 {
+  color: #f3ed01;
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.moreAboutCyberpunk .paragraph p {
+  color: white;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.secondHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000000), to(#ff0000));
+  background-image: linear-gradient(to bottom right, #000000, #ff0000);
+  border-bottom: 4px solid black;
+  grid-gap: 1.5em;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.secondHero .firstImage,
+.secondHero .secondImage,
+.secondHero .thirdImage {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 100%;
+}
+
+.secondHero .firstImage img,
+.secondHero .secondImage img,
+.secondHero .thirdImage img {
+  height: 25em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px;
+  border-color: black;
+  border-style: solid;
+}
+
+.secondHero .firstImage p,
+.secondHero .secondImage p,
+.secondHero .thirdImage p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'Pacifico';
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#000000));
+  background-image: linear-gradient(to bottom right, #ff0000, #000000);
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.secondHero .firstImage p:hover,
+.secondHero .secondImage p:hover,
+.secondHero .thirdImage p:hover {
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.thirdHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#0c0d0e));
+  background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+  grid-gap: 1.5em;
+  padding: 20px 40px;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.thirdHero .firstThirdImage,
+.thirdHero .secondThirdImage {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 100%;
+}
+
+.thirdHero .firstThirdImage img,
+.thirdHero .secondThirdImage img {
+  height: 25em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px;
+  border-color: black;
+  border-style: solid;
+}
+
+.thirdHero .firstThirdImage p,
+.thirdHero .secondThirdImage p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'Pacifico';
+  background-color: red;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.thirdHero .firstThirdImage p:hover,
+.thirdHero .secondThirdImage p:hover {
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fourthHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-color: black;
+  grid-gap: 1.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.fourthHero .shippingInformation,
+.fourthHero .moreShippingInformation,
+.fourthHero .safePay,
+.fourthHero .news {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 100%;
+}
+
+.fourthHero .shippingInformation p,
+.fourthHero .moreShippingInformation p,
+.fourthHero .safePay p,
+.fourthHero .news p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.fourthHero .shippingInformation p:hover,
+.fourthHero .moreShippingInformation p:hover,
+.fourthHero .safePay p:hover,
+.fourthHero .news p:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fifthHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#0c0d0e));
+  background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+  grid-gap: 1.5em;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.fifthHero .languageSelectionAndRegion {
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: right;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fifthHero .languageSelectionAndRegion label {
+  padding-right: 5px;
+}
+
+.fifthHero .languageSelectionAndRegion form select {
+  height: 30px;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.fifthHero .languageSelectionAndRegion .countrySelect {
+  padding-top: 10px;
+}
+
+.fifthHero .shoppingNavigationLinks,
+.fifthHero .webPages,
+.fifthHero .customerSupportNavigationLinks {
+  padding: 0;
+  margin-top: 0;
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+}
+
+.fifthHero .shoppingNavigationLinks :hover,
+.fifthHero .webPages :hover,
+.fifthHero .customerSupportNavigationLinks :hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fifthHero .shoppingNavigationLinks li :hover,
+.fifthHero .webPages li :hover,
+.fifthHero .customerSupportNavigationLinks li :hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+
+.fifthHero .shoppingNavigationLinks li a,
+.fifthHero .webPages li a,
+.fifthHero .customerSupportNavigationLinks li a {
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-color: black;
+  grid-gap: 1.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: 1px 2px 15px 2px #d1cdd1;
+          box-shadow: 1px 2px 15px 2px #d1cdd1;
+}
+
+.footer p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.footer p:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */

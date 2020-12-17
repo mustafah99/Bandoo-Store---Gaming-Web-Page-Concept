@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämningsuppgift 1 - Byggd med HTML & SCSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ea95b42fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="webpageHeader">
+        <div class="headerLogo">
+            <h1>Bandoo <span>Store</span></h1>
+        </div>
+        <nav id="navbar">
+            <div class="search">
+                <input class="searchBox" type="text" placeholder="Search">
+            </div>
+            <form class="LanguageSelect">
+                <!-- No action defined yet. -->
+                <label for="selectLanguageDropDown">Language: </label>
+                <select name="Language" id="selectLanguageDropDown">
+                    <option value="English">English</option>
+                    <option value="Svenska">Svenska</option>
+                    <option value="Arabic">عربى</option>
+                    <option value="Japanese">日本語</option>
+                    <option value="Russian">русский</option>
+                </select>
+            </form>
+            <button class="menuBtn1"><i class="fas fa-shopping-cart"></i></button>
+            <button class="menuBtn2"><i class="fas fa-question-circle"></i></button>
+        </nav>
+    </header>
+    <nav class="subnavbar">
+        <ul class="navigationLinks">
+            <li class="nav-list"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav-list"><a href="#"><i class="fas fa-store"></i> Store</a></li>
+            <li class="nav-list"><a href="#"><i class="fas fa-gamepad"></i> Gaming</a></li>
+            <li class="nav-list"><a href="#"><i class="fas fa-address-card"></i> About Us</a></li>
+        </ul>
+    </nav>
+    <div class="currentCampaignHero">
+        <div class="currentImage">
+            <img class="cyberpunk" src="Pictures/cyberpunkk2077herocopy.jpg" alt="Cyberpunk 2077">
+        </div>
+        <div class="buyNow">
+            <button class="purchaseGame" type="button">Buy Now</button>
+        </div>
+    </div>
+    <div class="moreAboutCyberpunk">
+        <div class="header">
+            <h1>Roam the Free Streets of Night City</h1>
+        </div>
+        <div class="paragraph">
+            <p>
+                Cyberpunk 2077 är ett actionrollspel som bygger på rollspelsserien Cyberpunk. Spelet utvecklas
+                av den polska The Witcher-studion CD Projekt RED, och kommer att utspela sig i en dystopisk
+                framtid där ultramodern teknik samexisterar med ett urartat mänskligt samhälle.
+            </p>
+        </div>
+    </div>
+
+    <div class="secondHero">
+        <div class="firstImage">
+            <img src="Pictures/Xbox2020_Cntlr_Frnt_MKT_1x1_RGB.png" alt="Xbox Series X">
+            <p>Xbox Series X</p>
+        </div>
+        <div class="secondImage">
+            <img src="Pictures/ps5-controller.jpg" alt="Playstation 5">
+            <p>Playstation 5</p>
+        </div>
+        <div class="thirdImage">
+            <img src="Pictures/stadiacontroller2.PNG" alt="Google Stadia">
+            <p>Google Stadia</p>
+        </div>
+    </div>
+    <div class="thirdHero">
+        <div class="firstThirdImage">
+            <img src="Pictures/spidermanmilesmorales.jpg" alt="Spiderman Miles Morales">
+        </div>
+        <div class="secondThirdImage">
+            <img src="Pictures/ratchetandclank.jpg" alt="Ratchet and Clank">
+        </div>
+    </div>
+    <div class="fourthHero">
+        <div class="shippingInformation">
+            <p><i class="fas fa-plane"></i> Free Shipping and Returns</p>
+        </div>
+        <div class="moreShippingInformation">
+            <p><i class="fas fa-shipping-fast"></i> Express Shipping</p>
+        </div>
+        <div class="safePay">
+            <p><i class="fas fa-shopping-cart"></i> Pay Safely</p>
+        </div>
+        <div class="news">
+            <p><i class="fas fa-newspaper"></i> News Everyday</p>
+        </div>
+    </div>
+    <div class="fifthHero">
+        <div class="shoppingDepartment">
+            <ul class="shoppingNavigationLinks">
+                <li class="nav-list"><a href="index.html">Home</a></li>
+                <li class="nav-list"><a href="#">Store</a></li>
+                <li class="nav-list"><a href="#">Gaming</a></li>
+                <li class="nav-list"><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="webPagesNavigationLinks">
+            <ul class="webPages">
+                <li class="nav-list"><a href="https://github.com/mustafah99?tab=repositories"><i
+                            class="fab fa-github"></i> My Github</a></li>
+            </ul>
+        </div>
+        <div class="customerSupport">
+            <ul class="customerSupportNavigationLinks">
+                <li class="nav-list"><a href="index.html">Contact Us</a></li>
+                <li class="nav-list"><a href="#">Our Return Policy</a></li>
+            </ul>
+        </div>
+        <div class="languageSelectionAndRegion">
+            <form class="LanguageSelect">
+                <!-- No action defined yet. -->
+                <label for="selectLanguageDropDown">Language: </label>
+                <select name="Language" id="selectLanguageDropDown">
+                    <option value="English">English</option>
+                    <option value="Svenska">Svenska</option>
+                    <option value="Arabic">عربى</option>
+                    <option value="Japanese">日本語</option>
+                    <option value="Russian">русский</option>
+                </select>
+            </form>
+            <form class="countrySelect">
+                <!-- No action defined yet. -->
+                <label for="selectLanguageDropDown">Country: </label>
+                <select name="Language" id="selectLanguageDropDown">
+                    <option value="England">England</option>
+                    <option value="Sverige">Sverige</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Russia">Russia</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyrightInformationTrademark">
+            <p>All Rights Reserved 2020 - Mustafa Said Helal | Animimo®</p>
+        </div>
+    </div>
+</body>
+
+</html>
